@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>My Timestamp microservice</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">
+                My API Project #1: Timestamp microservice
+            </h1>
+            <blockquote>
+                How it works:
+                <ul>1) You can pass a string as a parameter, and it will check to see whether that string 
+                contains either a unix timestamp or a natural language date (example: January 1, 2016) </ul>
+                <ul>NOTE: you must follow one of these formats [Month Day, Year or Month Day Year]
+                Year must be Text and Month must be an integer with two digits (e.g May is 05, December is 12)
+                </ul>
+                <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
+                <ul>3) If it does not contain a date or Unix timestamp, it returns <strong>null</strong> for those properties.</ul>
+            </blockquote>
+            <h3>Example usage:</h3>
+            <code>https://timestamp-microservice-est.herokuapp.com/September%2025,%201912</code><br>
+            <code>https://timestamp-microservice-est.herokuapp.com/-1807228800</code>
+            <h3>Example output:</h3>
+            <code>
+                {
+                  "unix": -1807228800,
+                  "natural": "September 25, 1912"
+                }
+            </code>
+        </div>
+    </body>
+</html>
