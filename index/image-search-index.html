@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Image Search Abstraction Layer</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="header">
+                My API Project #4: Image Search Abstraction Layer
+            </h1>
+            <blockquote>
+                How it works:
+                <ul>1) You can pass a string as a parameter, and it will find images that match that query, and links you can click on to access the image and it's context (example: dog) </ul>
+                <ul>2) You must define the number of results you wish to find setting <code>?offset='integer'</code> </ul>
+                <ul>3) You can get the most recent queries by using
+                <code>https://back-end-projects-freecodecamp.herokuapp.com/image-search-abstraction-layer/recent-searches/</code> </ul>
+            </blockquote>
+            
+            <h3>Example usage:</h3>
+            <code>https://back-end-projects-freecodecamp.herokuapp.com/image-search-abstraction-layer/new-search/dog?offset=2</code><br>
+            
+            <h3>Example output:</h3>
+            <pre><code>
+[ 
+    {
+        "url": "https://s-media-cache-ak0.pinimg.com/736x/63/0f/0e/630f0ef3f6f3126ca11f19f4a9b85243.jpg",
+        "snippet": "17 Best ideas about Dogs on Pinterest | Doge dog breed, Cute dogs ...",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNewIzrAw_IrlPlBIktfhSdsQSCyzv8AbIDhjMLKBnKh-eHJi7f7pu7yR3NA",
+        "context": "https://www.pinterest.com/explore/dogs/"
+    },
+    {
+        "url": "http://cdn1-www.dogtime.com/assets/uploads/2011/01/file_23262_entlebucher-mountain-dog-460x290.jpg",
+        "snippet": "Entlebucher Mountain Dog Breed Information, Pictures ...",
+        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNK6JJfZzq827TbtvtxNuK08vop50q2gliyfPudliepPUtPBBJloTw3jo",
+        "context": "http://dogtime.com/dog-breeds/entlebucher-mountain-dog"
+    }
+]
+            </code></pre>
+        </div>
+    </body>
+</html>
